@@ -17,7 +17,7 @@ const ApartmentBox: FC<{}> = () => {
 
     const navigate = useNavigate();
 
-    const goToAparmentHandler = () => navigate('/auth/apartmentpage');
+    const goToAparmentHandler = () => navigate('/apartmentpage');
 
     return (
         <Box>
