@@ -16,9 +16,9 @@ import {
   // NextBookingBox,
   //  HistoricalDataBox,
 } from "./style/Home.style";
-// import Example from "Components/Dashboard/Chart/Chart.component";
-// import PieChartComponent from "Components/Dashboard/PieChart/Piechart.component";
-// import HalfCircleChart from "Components/Dashboard/HalfCircleChart/Circlechart.component";
+import Example from "Components/Dashboard/Chart/Chart.component";
+import PieChartComponent from "Components/Dashboard/PieChart/Piechart.component";
+import HalfCircleChart from "Components/Dashboard/HalfCircleChart/Circlechart.component";
 import axios from "axios";
 import styled from "styled-components";
 import { RootState } from "redux/store";
@@ -147,17 +147,17 @@ const Home: FC<{}> = () => {
           <option value="plusthreemonths">Next three months</option>
         </Dropdown>
             <h2>Nights/Portal</h2>
-{/*             <PieChartComponent data={Object.entries(data?.nightsPortalReport || {}).map(([name, value]) => ({ name  , value })) || []}/> */}
+            <PieChartComponent data={Object.entries(data?.nightsPortalReport || {}).map(([name, value]) => ({ name  , value })) || []}/>
             </Test>
           <Test>
             <h2>Occupancy</h2>
-{/*             <HalfCircleChart percentage={data?.occupancyPercentage || 0} /> */}
+            <HalfCircleChart percentage={data?.occupancyPercentage || 0} />
             <h3>{data?.occupancyPercentage || 0}%</h3>
           </Test>
           <Testim>
             <h2>Occupancy & Revenue</h2>
             <TestimHolder>
-{/*             <Example data={chartData}/> */}
+            <Example data={chartData}/>
             </TestimHolder>
           </Testim>
         </TopBox>
