@@ -16,9 +16,9 @@ import {
   // NextBookingBox,
   //  HistoricalDataBox,
 } from "./style/Home.style";
-import Example from "Components/Dashboard/Chart/Chart.component";
-import PieChartComponent from "Components/Dashboard/PieChart/Piechart.component";
-import HalfCircleChart from "Components/Dashboard/HalfCircleChart/Circlechart.component";
+// import Example from "Components/Dashboard/Chart/Chart.component";
+// import PieChartComponent from "Components/Dashboard/PieChart/Piechart.component";
+// import HalfCircleChart from "Components/Dashboard/HalfCircleChart/Circlechart.component";
 import axios from "axios";
 import styled from "styled-components";
 import { RootState } from "redux/store";
